@@ -5,7 +5,7 @@ const Footer = () => {
                 <span>
                     Support the distributed web 👾. Visit my website at{" "}
                     <a
-                        href="https://github.com/bbayazit16"
+                        href="https://bbayazit16.eth.limo"
                         className="underline text-blue-400 dark:text-blue-200 select-none"
                     >
                         bbayazit16.eth.limo

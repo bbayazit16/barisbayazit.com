@@ -1,6 +1,7 @@
 # My Website
 
-This is the source code for my website, barisbayazit.com. It is also hosted on bbayazit16.eth (bbayazit16.eth.limo).
+This is the source code for my website, [barisbayazit.com](https://barisbayazit.com).
+It is also hosted on ipfs, available through [bbayazit16.eth.limo](https://bbayazit16.eth.limo).
 
 ## Run & Build
 

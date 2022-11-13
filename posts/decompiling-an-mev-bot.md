@@ -1,12 +1,12 @@
 ---
 title: "Decompiling An MEV Bot"
 date: "2022/08/24"
-lastEdit: "2022/10/27"
+lastEdit: "2022/11/13"
 ---
 
 As of writing, the total MEV extracted on mainnet has reached US $673,145,738. Yes, it is not thousands, it is in **millions!** [See the numbers yourself.](https://explore.flashbots.net/)
 
-MEV attracts talented coders due to it's rewarding nature. MEV has become a source of income for the masters, whilst being a source of loss for the newcomers.
+MEV attracts talented coders due to its rewarding nature. MEV has become a source of income for the masters, whilst being a source of loss for the newcomers.
 
 This vast sum of money, however, is not extracted easily. MEV can be described as the HFT (High-Frequency Trading) of blockchains - it is a zero-sum game, you either win, maybe sometimes get the breadcrumbs, or lose. Winning the game requires a deep understanding of how the EVM works, DeFi, and substantial programming skills, and even if you have all those, you may still encounter edge cases and fall into traps such as the [salmonella poisoned tokens.](https://github.com/Defi-Cartel/salmonella)
 

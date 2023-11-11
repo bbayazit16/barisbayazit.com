@@ -1,21 +1,23 @@
+"use client"
+
 import { useEffect } from "react"
 
-const DarkThemeHandler = () => {
-    const detectTheme = () => {
-        if (localStorage.getItem("lightTheme")) {
-            document.documentElement.classList.remove("dark")
-        } else {
-            document.documentElement.classList.add("dark")
-        }
+function detectTheme() {
+    if (localStorage.getItem("lightTheme")) {
+        document.documentElement.classList.remove("dark")
+    } else {
+        document.documentElement.classList.add("dark")
     }
+}
 
-    const updateTheme = () => {
-        localStorage.getItem("lightTheme")
-            ? localStorage.removeItem("lightTheme")
-            : localStorage.setItem("lightTheme", "1")
-        detectTheme()
-    }
+function updateTheme() {
+    localStorage.getItem("lightTheme")
+        ? localStorage.removeItem("lightTheme")
+        : localStorage.setItem("lightTheme", "1")
+    detectTheme()
+}
 
+export default function LightBulb() {
     useEffect(detectTheme, [])
 
     return (
@@ -35,5 +37,3 @@ const DarkThemeHandler = () => {
         </div>
     )
 }
-
-export default DarkThemeHandler

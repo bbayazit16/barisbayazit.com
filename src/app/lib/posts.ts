@@ -4,7 +4,8 @@ import { cache } from "react"
 import matter from "gray-matter"
 
 const getPosts = cache(async () => {
-    return readdirSync("./posts/").map(article => {
+    const postsDir = process.cwd() + "/posts"
+    return readdirSync(postsDir).map(article => {
         const { data: context } = matter(readFileSync(`./posts/${article}`, "utf8"))
         return {
             title: context.title,

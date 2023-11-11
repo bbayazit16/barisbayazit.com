@@ -5,12 +5,21 @@ import Link from "next/link"
 import matter from "gray-matter"
 
 import mdIt from "@/app/lib/markdown"
+import getPosts from "@/app/lib/posts"
 
 type Post = {
     title: string
     date: string
     lastEdit: string
     contents: string
+}
+
+export async function generateStaticParams() {
+    const posts = await getPosts()
+
+    return posts.map(post => ({
+        id: post.id,
+    }))
 }
 
 export default function Post({ params }: { params: { id: string } }) {

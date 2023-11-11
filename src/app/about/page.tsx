@@ -11,7 +11,7 @@ export default function About() {
         <main className="flex flex-grow flex-col p-8 h-full mb-auto mt-10 ml-[5%] mr-[5%] sm:ml-[12.5%] sm:mr-[12.5%] md:ml-[25%] md:mr-[25%]">
             <div>
                 <div className="float-left mr-4 mt-4 p-2 select-none">
-                    <Image height={128} width={128} src="/zeytin-square.png" alt="Profile photo" />
+                    <Image priority height={128} width={128} src="/zeytin-square.png" alt="Profile photo" />
                 </div>
                 <div className="mt-4 gap-x-4">
                     <Link

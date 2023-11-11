@@ -1,4 +1,3 @@
-import Link from "next/link"
 import LightBulb from "./lightbulb"
 import LinkAnimation from "./linkanimation"
 
